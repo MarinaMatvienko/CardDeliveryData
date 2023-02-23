@@ -81,7 +81,7 @@ class CardDeliveryTest {
     @Test
     void NoCity() {
         UserInfo user = generateUserInfo();
-        $(By.cssSelector("[data-test-id=city] input")).setValue("Москва");
+        $(By.cssSelector("[data-test-id=city] input")).setValue("Ереван");
         $(By.cssSelector("[data-test-id=date] input")).sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME, Keys.DELETE));
         $(By.cssSelector(".calendar-input input")).setValue(generateDate(3));
         $(By.cssSelector("[data-test-id=name] input")).setValue(user.getName());
